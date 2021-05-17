@@ -1,17 +1,19 @@
 $("form").on("submit", function (e) {
-  e.preventDefault()
+  e.preventDefault();
   $("main").append(`
     <div class="card">
       <div class="card-body">
-      <span style="color: ${$( "input:eq(2)" ).val()}">${$("input:eq(1)").val()}</span> - Le ${$("input:first").val()}git
+      <span style="color: ${$(
+        "input:eq(2)"
+      ).val()}">${$("input:eq(1)").val()}</span> - Le ${$("input:first").val()}git
       </div>
     </div>
-  `)
-})
+  `);
+});
 
 $("button:last").on("click", function () {
-  $("input:first").val("")
-  $("input:last").val("")
-})
+  $("input:first").val("");
+  $("input:last").val("");
+});
 
 // JE SUIS UN AUTRE COMMENTAIRE
